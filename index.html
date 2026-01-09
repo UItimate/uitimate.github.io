@@ -77,7 +77,7 @@ if(version) {
 }
 var gameframeJs = gfBuildPath + '/v' + (version || gfDefaultVersion) + '/bundle.js';
 if (useLocalGF) {
-  gameframeJs = 'http://localhost:3002/bundle.js';
+  gameframeJs = './bundle.js';
 }
 
 if (customGFHost) {
