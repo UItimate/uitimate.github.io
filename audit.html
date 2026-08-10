@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <iframe src='https://uakron.stellic.com/app/program/info?id=58'></iframe>
+        <a>hi</a>
+        <script>
+            window.addEventListener('load', () => {
+                console.log('Everything on the page has fully loaded.');
+                for (var id = 0; id < 679; id++) {
+                    console.log("Iteration number: " + id);
+                };
+                fetch('https://uakron.stellic.com/app/program/info?id=58')
+                	.then((resp) => resp.text())
+                	.then(function (data) {
+                		// Page content is available as 'data'.
+	            });
+
+            });
+        </script>
+    </body>
+</html>
